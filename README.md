@@ -52,35 +52,47 @@ will return `true` as the value.
 #### Operands
 
 number (e.g. `1984`, `3.14`, `–273.15`, `6.62607004e-34`)
+
 string (e.g. `"foo"`, `'bar'`)
+
 bool (case-insensitive `true` and `false`)
+
 identifier, see details below (case-sensitive, C-variable-like names, i.e. starting from an alphabetic symbol or underscore followed by alphabetic symbols, digits or underscore, e.g. `foo`, `BAR`, `_myvar`, `__my_var`, `Moon44`)
 
 #### Operators
 
 ##### Comparison
+
 number  `== != < > <= >=`
+
 string  `== != < > <= >=`
+
 boolean `== !=`
 
 ##### Logical
+
 `AND OR` (case-insensitive)
 
 ##### Subexpression
+
 Parentheses, as in maths
+
 `( )`, e.g. `(true OR false) AND true`
 
 #### Operator precedence
 
 `( )` (highest)
+
 `== != < > <= >=`
+
 `AND`
+
 `OR` (lowest)
 
-Implicit type casting is not supported, i.e. both operands must be of the same type. Both operands of logical operators must be boolean.
+Implicit type casting is not supported, i.e. both operands must be of the same type. Both operands of logical operators must be boolean. Also, see caveats.
 
 ##### Caveat
-Short-circuit logical expression evaluation can result in correct evaluation of expressions with incompatible types. This behaviour should be expected as it trades performance against possible bug prone code. For instance, `true OR "String"` and `false AND 123` will not fail because only the first operand is required to evaluate the result of the logical expression.
+Short-circuit logical expression evaluation can result in correct evaluation of expressions with incompatible types. This behaviour trades performance against possible bug prone code. For instance, `true OR "String"` and `false AND 123` will not fail because only the first operand is required to evaluate the result of the logical expression.
 
 #### Identifiers
 
