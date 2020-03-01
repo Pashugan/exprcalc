@@ -1,3 +1,9 @@
+[![GoDoc](https://godoc.org/github.com/Pashugan/exprcalc?status.svg)](https://godoc.org/github.com/Pashugan/exprcalc)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/Pashugan/exprcalc?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Pashugan/exprcalc)](https://goreportcard.com/report/github.com/Pashugan/exprcalc)
+[![GitHub license](https://img.shields.io/github/license/Pashugan/exprcalc)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Pashugan/exprcalc)](https://github.com/Pashugan/exprcalc/stargazers)
+
 # Expression calculator
 
 ## Overview
