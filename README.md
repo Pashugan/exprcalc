@@ -96,4 +96,4 @@ Short-circuit logical expression evaluation can result in correct evaluation of 
 
 #### Identifiers
 
-When you pass a context object implementing `exprcalc.Gettable` interface, it is possible to use identifiers in expressions, e.g. `age > 23`. The identifier is just a string that is passed into the GetByName() method of the object, that usually returns object field values or call its methods. Obviously, it must return one of the supported data types, i.e. any numeric type, string or boolean. Since using the interface instead of reflection, the overhead of the call is very small.
+When you pass a context object implementing `exprcalc.Gettable` interface, it is possible to use identifiers in expressions, e.g. `age > 23`. The identifier is just a string that is passed into the GetByName() method of the object, that usually returns object field values or calls object's methods. Obviously, it must return one of the supported data types, i.e. any numeric type, string or boolean. Since using the interface instead of reflection, the overhead of the call is very small.
