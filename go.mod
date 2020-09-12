@@ -1,8 +1,8 @@
 module github.com/Pashugan/exprcalc
 
-go 1.14
+go 1.15
 
 require (
-	github.com/alecthomas/participle v0.4.1
-	github.com/alecthomas/repr v0.0.0-20181024024818-d37bc2a10ba1
+	github.com/alecthomas/participle v0.6.0
+	github.com/alecthomas/repr v0.0.0-20200325044227-4184120f674c
 )
