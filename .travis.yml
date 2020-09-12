@@ -1,0 +1,7 @@
+arch:
+  - amd64
+
+language: go
+go:
+  - "1.14"
+  - "1.x"
